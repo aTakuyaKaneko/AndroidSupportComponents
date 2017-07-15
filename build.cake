@@ -451,7 +451,7 @@ Task ("component-docs").Does (() =>
 //Task ("libs").IsDependentOn ("genapi").IsDependentOn ("libs-base");
 Task ("libs").IsDependentOn ("libs-base");
 
-Task ("genapi").IsDependentOn ("libs-base").IsDependentOn ("externals").Does (() => {
+Task ("genapi").IsDependentOn ("libs-base").Does (() => {
 
 	var GenApiToolPath = GetFiles ("./tools/**/GenAPI.exe").FirstOrDefault ();
 
